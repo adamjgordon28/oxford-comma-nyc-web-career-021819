@@ -4,7 +4,9 @@ def oxford_comma(array)
   elsif array.length == 3
    #code
   elsif array.length > 3
-  #code
+  lasty = array.pop
+  sentence = array.join(",")
+  sentence.concat(" and #{lasty}")
   else 
     array.join(", ")
   end
